@@ -16,13 +16,16 @@ function sum(a, b) {
 <!-- // here we doesn't use return statement so it return undefined // -->
 
 2. If we store the returned value of both functions above in variable `first` and `second` what will be the value of `first` and `second`.
-   the value of first will be same as the value of sum.
-   the value of second will be undefined because here we don't use return statement so it gives undefined
+
+   the value of first variable will be same as the value of sum.
+   the value of second variable will be undefined because here we don't use return statement so it gives undefined
 
 3. What will be the output when you call above `sum` function (first) with three parameter like `sum(12, 24, 35)`. Explain why?
+
    it return value 36 because here we use two parameter but when we call the function there is three arguments so function accept only two argument and return the value.
 
 4. Can you store the first `sum` function in a variable named `add`. If yes why? If no why?
+
    Yes we can store first `sum` function in a variable named `add` because function is a object and object is a value and value is an expression so because of that we can store a function in a variable.
 
 5. Declare a function named `sayHello` the accepts a parameter `name` and returns the name like `Hello Arya`.
@@ -44,7 +47,7 @@ function showMessage() {
   return message;
 }
 
-showMessage(); //'Hello, John'
+showMessage(); //'Hello, John' // variable defined outside the function can be accessed inside but variable defined inside can not be accessed outside
 ```
 
 7. What will be the output for `Output1` `Output2` and `Output3` in the code below.
@@ -85,6 +88,8 @@ let showMessage = function () {
 
 9. Can function declaration be a Anonymous Function? Explain
 
+No, because Anonymous Function doesn't contain name of the function but function declaration contain name of the function .
+
 10. Give 5 example of good naming convention for defining a function. You can read the details below to do that.
 
 ```md
@@ -100,4 +105,12 @@ Function starting with…
 "calc…" – calculate something,
 "create…" – create something,
 "check…" – check something and return a boolean, etc.
+```
+
+```js
+function fullName() {}
+function addTwoNumber() {}
+function typeOf() {}
+function checkCondition() {}
+function getProduct() {}
 ```
